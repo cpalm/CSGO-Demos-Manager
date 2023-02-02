@@ -24,7 +24,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     - name: Restore Packages
-      run: nuget restore CSGO Demos Manager.sln
+      run: nuget restore "CSGO Demos Manager.sln"
 
     - name: Build solution
       run: msbuild CLI/CLI.csproj -t:rebuild -property:Configuration=Release
