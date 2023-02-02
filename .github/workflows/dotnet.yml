@@ -27,4 +27,4 @@ jobs:
       run: nuget restore "CSGO Demos Manager.sln"
 
     - name: Build solution
-      run: msbuild CLI/CLI.csproj -t:rebuild -property:Configuration=Release
+      run: msbuild CLI/CLI.csproj -t:rebuild -property:Configuration=Release -property:Platform=x86
